@@ -1,0 +1,220 @@
+body {
+  background-color:#191919;
+}
+
+.animated {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+#example-clock-container {
+    height:120px;
+    width: 120px;
+    margin-top:13px;
+    margin-left:30px;
+}
+
+#clock-seconds {
+    display:none;
+}
+
+.subdividerleft {
+  height:50px;
+  margin-top:180px;
+  text-align:left;
+  /*margin-left:280px;*/
+}
+
+.subdividerright {
+  height:50px;
+  margin-top:100px;
+  text-align:right;
+}
+
+.col-md-offset-1 {
+  margin-left: 4%;
+}
+
+.col-md-12 {
+    width:100%;
+    display:flex;
+    /*margin-left: 115px;*/
+}
+
+#weatherdiv {
+    /*margin-top:200px;*/
+    text-align:left;
+}
+
+#sunrisediv {
+    /*margin-top:200px;*/
+    text-align:left;
+}
+
+#sunsetdiv {
+    text-align:left;
+}
+
+#moondiv {
+    text-align:left;
+}
+
+.time {
+  height:200px;
+  margin-bottom:50px;
+  margin-top:50px;
+  /*width:1200px;*/
+  text-align:left;
+}
+
+#info {
+    color:white;
+    font-size: 160px;
+    font-family: 'Lato', sans-serif;
+    /*padding-top:70px;*/
+}
+
+#seconds {
+    color:rgba(255,255,255, 0.3);
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+}
+
+#currenttemp {
+    color:white;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+/*    content: "\00b0";*/
+}
+
+#currenttemp::after {
+    content: "\00b0";
+}
+
+#weathertype {
+    color:rgba(255,255,255, 0.3);
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    text-transform: lowercase;
+    margin-top:-20px;
+    /*margin-left:130px;*/
+}
+
+#city {
+    color:white;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+#sunrise {
+    color:white;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+#sunset {
+    color:white;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+#moon {
+    color:white;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+.todaysunrise {
+    color:rgba(255,255,255, 0.3);
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    /*margin-top:10px;*/
+    /*margin-left:130px;*/
+}
+
+.todaysunset {
+    color:rgba(255,255,255, 0.3);
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+}
+
+.moonphase {
+    color:rgba(255,255,255, 0.3);
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+}
