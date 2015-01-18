@@ -145,21 +145,6 @@
     </div>
 
 
-    <script>
-      $(function() {
-      $('div.column:not(:first)').hide(); // Hide all columns except the first
-      setInterval(showColumn, 5000); // Start the periodic calls (5 secs)
-    });
-
-      var colIndex = 1;
-
-      function showColumn() {
-      $('#column' + colIndex).hide(); // Hide current ones
-      colIndex = (colIndex % 4) + 1; // Next index with cycling
-      $('#column' + colIndex).show(); // Show next one
-    }
-  </script>
-
   <div id="container">
 
     <div class="row display" id="weatherdiv">
